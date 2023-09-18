@@ -1,0 +1,29 @@
+@keyframes logo {
+  0% {
+    transform: translateY(200px);
+    filter: drop-shadow(100%);
+  }
+  50% {
+    transform: rotate(90deg);
+    filter: saturate(100%);
+  }
+  100% {
+    border-radius: 100%;
+  }
+}
+img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: logo;
+}
+
+div {
+  text-align: center;
+}
+
+img:hover {
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
